@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yym0924.github.io</id>
     <title>yym0924&apos;s blog</title>
-    <updated>2019-06-28T07:59:26.283Z</updated>
+    <updated>2019-06-28T08:08:04.988Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yym0924.github.io"/>
     <link rel="self" href="https://yym0924.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://yym0924.github.io/post/ji-yu-jupyter-de-python-he-r-huan-jing-da-jian">
         </link>
         <updated>2019-06-28T06:31:57.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="简介">简介</h1>
+        <summary type="html"><![CDATA[<p>基于Jupyter搭建一个Python和R语言的开发环境</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>基于Jupyter搭建一个Python和R语言的开发环境</p>
+<!-- more -->
+<h1 id="简介">简介</h1>
 <p>Jupyter是个支持多语言的开源交互式开发环境，便于分步执行和显示结果，也十分利于展示。在数据分析、机器学习和教学等领域有着广泛的应用。而作为生物信息学的研究者，我们主要通过基于网页的Jupyter Notebook使用Python和R进行工作。
 由于其基于网页的特性，可以方便地在本机浏览器中使用子系统和远程服务器上的Python和R环境。</p>
 <p><img src="https://yym0924.github.io/post-images/1561704039434.png" alt="">
@@ -116,7 +120,11 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
         <link href="https://yym0924.github.io/post/hello-world">
         </link>
         <updated>2019-06-26T08:08:14.000Z</updated>
+        <summary type="html"><![CDATA[<p>正式开始搭建自己的博客❤😀</p>
+]]></summary>
         <content type="html"><![CDATA[<p>正式开始搭建自己的博客❤😀</p>
+<!-- more -->
+<p>正式开始搭建自己的博客❤😀</p>
 ]]></content>
     </entry>
 </feed>
