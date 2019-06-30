@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yym0924.github.io</id>
     <title>yym0924&apos;s blog</title>
-    <updated>2019-06-30T16:39:28.781Z</updated>
+    <updated>2019-06-30T16:49:32.711Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yym0924.github.io"/>
     <link rel="self" href="https://yym0924.github.io/atom.xml"/>
@@ -29,7 +29,7 @@
 <h1 id="初始配置">初始配置</h1>
 <h2 id="github-pages-创建">GitHub Pages 创建</h2>
 <h3 id="仓库创建">仓库创建</h3>
-<p>首先，需要创建一个仓库，建议仓库为 <strong>username.github.io</strong>。根据官方文档， GitHub 会默认将此仓库设置成 GitHub Pages 可访问类型，否则不能默认使用 Github Pages。例如我的用户名是 <strong>yym0924</strong>，所以仓库名就是 <strong>yym0924.github.io</strong>。不过我创建仓库的时候并未自动启用 GitHub Pages，遇到这种情况手动开启即可。</p>
+<p>首先，需要创建一个仓库，建议仓库为 <strong>username.github.io</strong>。根据<a href="https://help.github.com/cn#github-pages-basics">官方文档</a>， GitHub 会默认将名称符合要求的仓库设置成 GitHub Pages 可访问类型。例如我的用户名是 <strong>yym0924</strong>，所以仓库名就是 <strong>yym0924.github.io</strong>。不过我创建仓库的时候并未自动启用 GitHub Pages，遇到这种情况手动开启即可。</p>
 <h3 id="基本设置">基本设置</h3>
 <h4 id="开通-github-pages">开通 GitHub Pages</h4>
 <p>这里也说明下手动启用 GitHub Pages 的方式。
