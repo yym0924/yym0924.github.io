@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yym0924.github.io</id>
     <title>yym0924&apos;s blog</title>
-    <updated>2019-06-30T17:03:34.241Z</updated>
+    <updated>2019-06-30T17:15:58.675Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yym0924.github.io"/>
     <link rel="self" href="https://yym0924.github.io/atom.xml"/>
@@ -11,14 +11,14 @@
     <icon>https://yym0924.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, yym0924&apos;s blog</rights>
     <entry>
-        <title type="html"><![CDATA[Gridea上手教程]]></title>
+        <title type="html"><![CDATA[Gridea 上手教程]]></title>
         <id>https://yym0924.github.io/post/gridea-shang-shou-jiao-cheng</id>
         <link href="https://yym0924.github.io/post/gridea-shang-shou-jiao-cheng">
         </link>
         <updated>2019-06-30T17:03:28.000Z</updated>
-        <summary type="html"><![CDATA[<p>使用Gridea搭建和管理GitHub Pages</p>
+        <summary type="html"><![CDATA[<p>使用 Gridea 搭建和管理 GitHub Pages</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>使用Gridea搭建和管理GitHub Pages</p>
+        <content type="html"><![CDATA[<p>使用 Gridea 搭建和管理 GitHub Pages</p>
 <!-- more -->
 <h1 id="本地软件安装">本地软件安装</h1>
 <h2 id="git-安装">Git 安装</h2>
@@ -90,14 +90,14 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[基于Jupyter的Python和R环境搭建]]></title>
+        <title type="html"><![CDATA[基于 Jupyter 的 Python 和 R 环境搭建]]></title>
         <id>https://yym0924.github.io/post/ji-yu-jupyter-de-python-he-r-huan-jing-da-jian</id>
         <link href="https://yym0924.github.io/post/ji-yu-jupyter-de-python-he-r-huan-jing-da-jian">
         </link>
         <updated>2019-06-28T06:31:57.000Z</updated>
-        <summary type="html"><![CDATA[<p>基于Jupyter搭建一个Python和R语言的开发环境</p>
+        <summary type="html"><![CDATA[<p>基于 Jupyter 搭建一个 Python 和 R 语言的开发环境</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>基于Jupyter搭建一个Python和R语言的开发环境</p>
+        <content type="html"><![CDATA[<p>基于 Jupyter 搭建一个 Python 和 R 语言的开发环境</p>
 <!-- more -->
 <h1 id="简介">简介</h1>
 <p>Jupyter是个支持多语言的开源交互式开发环境，便于分步执行和显示结果，也十分利于展示。在数据分析、机器学习和教学等领域有着广泛的应用。而作为生物信息学的研究者，我们主要通过基于网页的Jupyter Notebook使用Python和R进行工作。
