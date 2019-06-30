@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yym0924.github.io</id>
     <title>yym0924&apos;s blog</title>
-    <updated>2019-06-30T17:02:16.057Z</updated>
+    <updated>2019-06-30T17:03:34.241Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yym0924.github.io"/>
     <link rel="self" href="https://yym0924.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://yym0924.github.io/post/gridea-shang-shou-jiao-cheng</id>
         <link href="https://yym0924.github.io/post/gridea-shang-shou-jiao-cheng">
         </link>
-        <updated>2019-06-30T17:02:00.000Z</updated>
+        <updated>2019-06-30T17:03:28.000Z</updated>
         <summary type="html"><![CDATA[<p>使用Gridea搭建和管理GitHub Pages</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>使用Gridea搭建和管理GitHub Pages</p>
