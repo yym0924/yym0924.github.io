@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1561900050188">
+<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1561903315174">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yym0924.github.io/styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://yym0924.github.io">
-        <img src="https://yym0924.github.io/images/avatar.png?v=1561900050188" class="site-logo">
+        <img src="https://yym0924.github.io/images/avatar.png?v=1561903315174" class="site-logo">
         <h1 class="site-title">yym0924&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -115,23 +115,37 @@
             <div class="post-content">
               <p>使用Gridea搭建和管理GitHub Pages</p>
 <!-- more -->
-<h1 id="github-pages-创建">GitHub Pages 创建</h1>
-<h2 id="仓库创建">仓库创建</h2>
-<p>首先，需要创建一个仓库，建议仓库为 <strong>username.github.io</strong> 。根据官方文档， Github 会默认将此仓库设置成 GitHub Pages 可访问类型，否则不能默认使用 Github Pages。例如我的用户名是 <strong>yym0924</strong> ，所以仓库名就是 <strong>yym0924.github.io</strong> 。不过我自己创建仓库的时候遇到并未自动启用 GitHub Pages ，遇到这种情况手动开启即可。</p>
-<h2 id="基本设置">基本设置</h2>
-<h3 id="开通github-pages">开通GitHub Pages</h3>
-<p>按照官方主页的描述，仓库名符合 <strong>username.github.io</strong> 的新建仓库都会自动启用GitHub Pages。但是我创建这个博客的时候并没有自动启用，所以这里也说明下手动启用的方式。
-<img src="https://yym0924.github.io/post-images/1561884299925.png" alt="测试">
-打开仓库的 <strong>Settings</strong> ，</p>
-<h3 id="创建新token">创建新token</h3>
-<p>Gridea 管理GitHub需要token。点击<a href="https://github.com/settings/tokens/new">这里</a> 创建一个新的token。</p>
-<h3 id=""></h3>
 <h1 id="本地软件安装">本地软件安装</h1>
 <h2 id="git-安装">Git 安装</h2>
 <p>Gridea的同步功能依赖本地Git客户端的，所以我们需要先安装Git。
-<a href="https://git-scm.com/">Git官网</a></p>
+<a href="https://git-scm.com/">Git官网</a>下载平台对应的安装程序。安装没有特别的要求，一路下一步即可。</p>
 <h2 id="gridea-安装">Gridea 安装</h2>
-<p><a href="https://gridea.dev/">Gridea官网</a></p>
+<p><a href="https://gridea.dev/">Gridea官网</a>下载对应平台的安装程序进行安装。</p>
+<h1 id="初始配置">初始配置</h1>
+<h2 id="github-pages-创建">GitHub Pages 创建</h2>
+<h3 id="仓库创建">仓库创建</h3>
+<p>首先，需要创建一个仓库，建议仓库为 <strong>username.github.io</strong> 。根据官方文档， Github 会默认将此仓库设置成 GitHub Pages 可访问类型，否则不能默认使用 Github Pages。例如我的用户名是 <strong>yym0924</strong> ，所以仓库名就是 <strong>yym0924.github.io</strong> 。不过我自己创建仓库的时候遇到并未自动启用 GitHub Pages ，遇到这种情况手动开启即可。</p>
+<h3 id="基本设置">基本设置</h3>
+<h4 id="开通github-pages">开通GitHub Pages</h4>
+<p>按照官方主页的描述，仓库名符合 <strong>username.github.io</strong> 的新建仓库都会自动启用GitHub Pages。但是我创建这个博客的时候并没有自动启用，所以这里也说明下手动启用的方式。
+<img src="https://yym0924.github.io/post-images/1561884299925.png" alt="">打开仓库的 <strong>Settings</strong></p>
+<p><img src="https://yym0924.github.io/post-images/1561900488026.png" alt="">找到 <strong>GitHub Pages</strong> 设置的地方
+点击 <strong>Choose a theme</strong> 随意选择一个主题，因为后续我们使用Gridea设置主题，这边选择主题只是为了开启GitHub Pages可访问类型。</p>
+<h4 id="创建新token">创建新token</h4>
+<p>Gridea 管理GitHub需要token。登录GitHub后点击<a href="https://github.com/settings/tokens/new">这里</a> 创建一个新的token。
+<img src="https://yym0924.github.io/post-images/1561900733349.png" alt="">勾选上 <strong>repo</strong> 相关权限即可。</p>
+<p><img src="https://yym0924.github.io/post-images/1561900858791.png" alt="">请把新建的token复制一个地方保存起来，因为关闭这个网页后你就再也看不到它了。</p>
+<h2 id="gridea初始配置">Gridea初始配置</h2>
+<p><img src="https://yym0924.github.io/post-images/1561901737634.png" alt="">做好基本设置并保存，这步设置好后就可以开始使用。你可以点击客户端左下角的<strong>预览</strong>按钮来查看本地渲染效果，或者点击<strong>同步</strong>进行博客最新内容的部署。</p>
+<h2 id="开启文章评论">开启文章评论</h2>
+<p>Gridea支持 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk</a> 和 Disqus 两种评论系统，这里我使用Gitalk评论系统。</p>
+<blockquote>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。
+首先你需要有一个 <strong>Github OAuth Applicatio</strong>  ，点击<a href="https://github.com/settings/applications/new">这里</a>创建。
+<img src="https://yym0924.github.io/post-images/1561902572987.png" alt="">
+<img src="https://yym0924.github.io/post-images/1561902710190.png" alt="">创建完成后可将 <strong>Client ID</strong> 和 <strong>Client Secret</strong> 复制保存到本地。
+<img src="https://yym0924.github.io/post-images/1561903153711.png" alt="">设置、保存并同步后评论模块就可用了。</p>
+</blockquote>
 <h1 id="维护github-pages">维护GitHub Pages</h1>
 
             </div>
