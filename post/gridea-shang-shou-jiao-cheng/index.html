@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1561903889558">
+<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1561907440360">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yym0924.github.io/styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://yym0924.github.io">
-        <img src="https://yym0924.github.io/images/avatar.png?v=1561903889558" class="site-logo">
+        <img src="https://yym0924.github.io/images/avatar.png?v=1561907440360" class="site-logo">
         <h1 class="site-title">yym0924&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -137,16 +137,42 @@
 <p><img src="https://yym0924.github.io/post-images/1561900858791.png" alt="">请把新建的token复制一个地方保存起来，因为关闭这个网页后你就再也看不到它了。</p>
 <h2 id="gridea初始配置">Gridea初始配置</h2>
 <p><img src="https://yym0924.github.io/post-images/1561901737634.png" alt="">做好基本设置并保存，这步设置好后就可以开始使用。你可以点击客户端左下角的<strong>预览</strong>按钮来查看本地渲染效果，或者点击<strong>同步</strong>进行博客最新内容的部署。</p>
-<h2 id="开启文章评论">开启文章评论</h2>
+<h3 id="开启文章评论">开启文章评论</h3>
 <p>Gridea支持 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk</a> 和 Disqus 两种评论系统，这里我使用Gitalk评论系统。</p>
 <blockquote>
 <p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。
 首先你需要有一个 <strong>Github OAuth Applicatio</strong>  ，点击<a href="https://github.com/settings/applications/new">这里</a>创建。
 <img src="https://yym0924.github.io/post-images/1561902572987.png" alt="">
 <img src="https://yym0924.github.io/post-images/1561902710190.png" alt="">创建完成后可将 <strong>Client ID</strong> 和 <strong>Client Secret</strong> 复制保存到本地。
-<img src="https://yym0924.github.io/post-images/1561903522338.png" alt="">设置、保存并同步后评论模块就可用了。</p>
+<img src="https://yym0924.github.io/post-images/1561903522338.png" alt="">设置、保存并同步后评论模块就可用了。
+<img src="https://yym0924.github.io/post-images/1561903957001.png" alt="">首次使用时可能出现上图情况，使用 GitHub 登录一次即可。</p>
 </blockquote>
+<h3 id="favicon和头像设置">FAVICON和头像设置</h3>
+<p><img src="https://yym0924.github.io/post-images/1561904358927.png" alt="">FAVICON就是网页标题左侧的小图标</p>
+<p><img src="https://yym0924.github.io/post-images/1561904383831.png" alt="">头像</p>
+<p>其实这两个不属于初始设置，但是默认使用的是Gridea的图标，在你自己的博客里还是很违和的。
+<img src="https://yym0924.github.io/post-images/1561904077812.png" alt="">
+<img src="https://yym0924.github.io/post-images/1561904084132.png" alt=""></p>
+<h3 id="主题设置">主题设置</h3>
+<p><img src="https://yym0924.github.io/post-images/1561904932177.png" alt="">基础设置</p>
+<p><img src="https://yym0924.github.io/post-images/1561904997628.png" alt="">自定义设置，自由度很大，这里大部分人设置下想要公开得社交网站主页即可。设置后会显示在网页左下角。</p>
+<h3 id="菜单设置">菜单设置</h3>
+<p>我搭建博客的时候遇到菜单里的<strong>关于</strong>选项链接是 <strong>/about/</strong> ，并不能链接对应自带<strong>关于</strong>文章。所以需要进行修改，你也可以把<strong>关注</strong>选项链接到其他你自己新建的文章。
+<img src="https://yym0924.github.io/post-images/1561906056439.png" alt="">
+<img src="https://yym0924.github.io/post-images/1561905339095.png" alt="">点击对应菜单名称即可进入设置</p>
 <h1 id="维护github-pages">维护GitHub Pages</h1>
+<h2 id="设置标签">设置标签</h2>
+<p>标签并非必须，但是添加标签对于你自己的管理和访问者寻找需要的文章都有好处。
+<img src="https://yym0924.github.io/post-images/1561906180285.png" alt="">
+<img src="https://yym0924.github.io/post-images/1561906187690.png" alt=""></p>
+<h2 id="新建文章">新建文章</h2>
+<p><img src="https://yym0924.github.io/post-images/1561907198939.png" alt="">
+<img src="https://yym0924.github.io/post-images/1561907241206.png" alt="">
+在文章管理界面点击<strong>新建文章</strong>。GitHub Pages使用Markdown编写文章，但是Gridea的文章编辑器提供了一些基本样式，点击按钮既可以添加对应标记，方便初学者使用。不过这里还是建议大家抽空学习一下Markdown，很简单。<a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">Markdown 语法简单教程</a></p>
+<h2 id="预览与同步">预览与同步</h2>
+<p><img src="https://yym0924.github.io/post-images/1561907062823.png" alt="">
+所有的设置和内容更新要在服务器端生效都需要在<strong>保存</strong>后点击客户端左下角的<strong>同步</strong>。
+为了保证不出问题，也可以同步前在本地进行<strong>预览</strong>。</p>
 
             </div>
             
