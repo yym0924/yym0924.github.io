@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yym0924.github.io</id>
     <title>yym0924&apos;s blog</title>
-    <updated>2019-06-30T17:15:58.675Z</updated>
+    <updated>2019-07-01T02:51:27.301Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yym0924.github.io"/>
     <link rel="self" href="https://yym0924.github.io/atom.xml"/>
@@ -67,7 +67,7 @@
 <p><img src="https://yym0924.github.io/post-images/1561905339095.png" alt="">点击对应菜单名称即可进入设置</p>
 <h1 id="维护-github-pages">维护 GitHub Pages</h1>
 <h2 id="设置标签">设置标签</h2>
-<p>标签并非必须，但是标签对于管理和访问而言都能提高效率。
+<p>标签并非必须，但是对于管理和访问而言都能提高效率。
 <img src="https://yym0924.github.io/post-images/1561906180285.png" alt="">
 <img src="https://yym0924.github.io/post-images/1561906187690.png" alt=""></p>
 <h2 id="新建文章">新建文章</h2>
