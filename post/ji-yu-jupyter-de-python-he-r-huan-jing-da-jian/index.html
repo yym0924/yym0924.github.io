@@ -1,137 +1,119 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" >
 
-<head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>
-    基于 Jupyter 的 Python 和 R 环境搭建 | yym0924&#39;s blog
-</title>
-<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1563272740153">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<title>基于 Jupyter 的 Python 和 R 环境搭建 | yym0924&#39;s blog</title>
+<meta name="description" content="分享也是一种学习">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1563274572102">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yym0924.github.io/styles/main.css">
-<!-- js -->
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://yym0924.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-        
-            
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-                
 
-                    
-                            
-</head>
+  </head>
+  <body>
+    <div id="app" class="main">
 
-<body>
-    <div class="main">
-        <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="https://yym0924.github.io">
-                <img class="avatar" src="https://yym0924.github.io/images/avatar.png?v=1563272740153" alt="">
-            </a>
-            <div class="site-title">
-                <h1>
-                    yym0924&#39;s blog
-                </h1>
-            </div>
-        </div>
-        <span class="menu-btn fa fa-align-justify"></span>
-        <div class="menu-container">
-            <ul>
-                
-                    
-                            <li>
-                                <a href="/" class="menu">
-                                    首页
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/archives" class="menu">
-                                    归档
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/tags" class="menu">
-                                    标签
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/post/about" class="menu">
-                                    关于
-                                </a>
-                            </li>
-                            
-                                
-            </ul>
-        </div>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://yym0924.github.io">
+        <img src="https://yym0924.github.io/images/avatar.png?v=1563274572102" class="site-logo">
+        <h1 class="site-title">yym0924&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/yym0924" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/yym0924/" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      分享也是一种学习
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://yym0924.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $(".menu-btn").click(function() {
-            $(".menu-container").slideToggle();
-        });
-        $(window).resize(function() {
 
-            if (window.matchMedia('(min-width: 960px)').matches) {
-                $(".menu-container").css('display', 'block')
-            } else {
-                $(".menu-container").css('display', 'none')
-            }
-
-        });
-    });
-</script>
-
-            <div id="main-content" class="post-detail main-container">
-                <!-- left -->
-                <div id="content" class="main-container-left">
-                    <article class="post i-card">
-                        <h2 class="post-title">
-                            基于 Jupyter 的 Python 和 R 环境搭建
-                        </h2>
-                        <div class="post-info">
-                            <time class="post-time">2019-06-28</time>
-                            
-                                <a href="https://yym0924.github.io/tag/10W-XnXv7" class="post-tag i-tag
-                            i-tag-banana">
-                            #Python
-                        </a>
-                                
-                                <a href="https://yym0924.github.io/tag/OPNu-w3pA" class="post-tag i-tag
-                            i-tag-other_4">
-                            #R
-                        </a>
-                                
-                                <a href="https://yym0924.github.io/tag/h078Q-FmN" class="post-tag i-tag
-                            i-tag-other_1">
-                            #Jupyter
-                        </a>
-                                
-                        </div>
-                        
-                            <div class="post-feature-image" style="background-image: url('https://yym0924.github.io/post-images/ji-yu-jupyter-de-python-he-r-huan-jing-da-jian.png')"></div>
-                            
-                                <div class="post-content">
-                                    <p>基于 Jupyter 搭建一个 Python 和 R 语言的开发环境</p>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">基于 Jupyter 的 Python 和 R 环境搭建</h2>
+            <div class="post-date">2019-06-28</div>
+            
+              <div class="feature-container" style="background-image: url('https://yym0924.github.io/post-images/ji-yu-jupyter-de-python-he-r-huan-jing-da-jian.png')">
+              </div>
+            
+            <div class="post-content">
+              <p>基于 Jupyter 搭建一个 Python 和 R 语言的开发环境</p>
 <!-- more -->
 <h1 id="简介">简介</h1>
 <p>Jupyter是个支持多语言的开源交互式开发环境，便于分步执行和显示结果，也十分利于展示。在数据分析、机器学习和教学等领域有着广泛的应用。而作为生物信息学的研究者，我们主要通过基于网页的Jupyter Notebook使用Python和R进行工作。<br>
@@ -226,137 +208,91 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
 <img src="https://yym0924.github.io/post-images/1561708405355.png" alt=""><br>
 这就可以开始使用了。</p>
 
-                                </div>
-                    </article>
-                    <!--  -->
-                    
-                        <div class="next-post">
-                            <div class="next">下一篇</div>
-                            <a href="https://yym0924.github.io/post/hello-world">
-                                <h3 class="post-title">
-                                    Hello World!
-                                </h3>
-                            </a>
-                        </div>
-                        
-                            <div id="disqus_thread"></div>
-                            <div id="gitalk-container"></div>
-                </div>
-                <!-- middle -->
-                <div class="main-container-middle"></div>
-                <!-- right -->
-                <div id="sidebar" class="main-container-right">
-                    
-                        <!-- toc -->
-                        
-    <div class="toc-card i-card ">
-        <div class="toc-title i-card-title">目录</div>
-        <div class="toc-content">
-            <ul class="markdownIt-TOC">
-<li><a href="#%E7%AE%80%E4%BB%8B">简介</a>
-<ul>
-<li><a href="#jupyter%E6%9C%AC%E4%BD%93%E5%AE%89%E8%A3%85">Jupyter本体安装</a></li>
-<li><a href="#irkernel%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB">IRkernel的安装与激活</a>
-<ul>
-<li><a href="#%E6%89%80%E9%9C%80%E4%BE%9D%E8%B5%96%E5%8C%85%E7%9A%84%E5%AE%89%E8%A3%85">所需依赖包的安装</a></li>
-<li><a href="#irkernel%E6%9C%AC%E4%BD%93%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB">IRkernel本体的安装与激活</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#%E4%BD%BF%E7%94%A8">使用</a>
-<ul>
-<li><a href="#windows%E7%B3%BB%E7%BB%9Fopenssh%E5%AE%89%E8%A3%85">Windows系统OpenSSH安装</a>
-<ul>
-<li><a href="#%E9%9D%9Ewindows-10%E7%B3%BB%E7%BB%9F%E7%9A%84openssh%E5%AE%89%E8%A3%85">非Windows 10系统的OpenSSH安装</a></li>
-<li><a href="#windows-10%E7%B3%BB%E7%BB%9F%E7%9A%84openssh%E5%90%AF%E7%94%A8">Windows 10系统的OpenSSH启用</a></li>
-</ul>
-</li>
-<li><a href="#%E8%BF%9C%E7%A8%8B%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84">远程端口映射</a></li>
-<li><a href="#%E5%90%AF%E5%8A%A8jupyter-notebook">启动Jupyter Notebook</a>
-<ul>
-<li><a href="#%E5%90%AF%E5%8A%A8jupyter-notebook%E6%9C%8D%E5%8A%A1">启动Jupyter Notebook服务</a></li>
-<li><a href="#%E6%9C%AC%E5%9C%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%BC%80jupyter-notebook">本地浏览器打开Jupyter Notebook</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://yym0924.github.io/tag/10W-XnXv7" class="tag">
+                    Python
+                  </a>
+                
+                  <a href="https://yym0924.github.io/tag/OPNu-w3pA" class="tag">
+                    R
+                  </a>
+                
+                  <a href="https://yym0924.github.io/tag/h078Q-FmN" class="tag">
+                    Jupyter
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://yym0924.github.io/post/hello-world">
+                  <h3 class="post-title">
+                    Hello World!
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
-        <script>
-            function locateCatelogList() {
-                /*获取文章目录集合,可通过:header过滤器*/
-                var alis = $('.post-content :header');
-                /*获取侧边栏目录列表集合**/
-                var sidebar_alis = $('.markdownIt-TOC a');
-                /*获取滚动条到顶部的距离*/
-                var scroll_height = $(window).scrollTop();
-                for (var i = 0; i < alis.length; i++) {
-                    /*获取锚点集合中的元素分别到顶点的距离*/
-                    var a_height = $(alis[i]).offset().top;
-                    if (a_height < scroll_height) {
-                        /*高亮显示*/
-                        sidebar_alis.removeClass('on');
-                        $(sidebar_alis[i]).addClass('on');
-                    }
-                }
-            }
-            $(function() {
-                /*绑定滚动事件 */
-                $(window).bind('scroll', locateCatelogList);
-            });
-        </script>
+      </div>
     </div>
-    
-                            
 
-                </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<script type="application/javascript">
 
+AOS.init();
 
+hljs.initHighlightingOnLoad()
 
-            </div>
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-
-            <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://yym0924.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
 </script>
 
 
-    </div>
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
+
+      var gitalk = new Gitalk({
+        clientID: 'e24845a657f7afac3bc3',
+        clientSecret: '8c7947ec4d5f82ca21583044cbc9071c0aa8e0b3',
+        repo: 'yym0924.github.io',
+        owner: 'yym0924',
+        admin: ['yym0924'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
     </script>
-    
-        
-            <script>
-    window.onload = function() {
-        var gitalk = new Gitalk({
-            clientID: 'e24845a657f7afac3bc3',
-            clientSecret: '8c7947ec4d5f82ca21583044cbc9071c0aa8e0b3',
-            repo: 'yym0924.github.io',
-            owner: 'yym0924',
-            admin: ['yym0924'],
-            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
-            distractionFreeMode: false // Facebook-like distraction free mode
-        })
+  
 
-        gitalk.render('gitalk-container')
-    }
-</script>
-                
+  
 
-                    
-                                
-</body>
 
+
+
+  </body>
 </html>
