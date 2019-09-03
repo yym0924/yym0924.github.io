@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | yym0924&#39;s blog</title>
+<title>R语言操作系统交互 | yym0924&#39;s blog</title>
 <meta name="description" content="分享也是一种学习">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yym0924.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -99,18 +105,29 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">R语言操作系统交互</h2>
+            <div class="post-date">2019-07-17</div>
             
-              <a class="tag" href="https://yym0924.github.io/tag/gridea">Gridea</a>
+            <div class="post-content">
+              <p>R语言与文件系统的交互及命令行输出</p>
+<!-- more -->
+<p><img src="https://yym0924.github.io/post-images/1567478848932.png" alt=""></p>
+
+            </div>
             
-              <a class="tag" href="https://yym0924.github.io/tag/10W-XnXv7">Python</a>
             
-              <a class="tag" href="https://yym0924.github.io/tag/OPNu-w3pA">R</a>
+
             
-              <a class="tag" href="https://yym0924.github.io/tag/h078Q-FmN">Jupyter</a>
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
             
+
           </div>
+
         </div>
       </div>
     </div>
@@ -131,6 +148,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'e24845a657f7afac3bc3',
+        clientSecret: '8c7947ec4d5f82ca21583044cbc9071c0aa8e0b3',
+        repo: 'yym0924.github.io',
+        owner: 'yym0924',
+        admin: ['yym0924'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
