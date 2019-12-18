@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yym0924.github.io</id>
     <title>yym0924&apos;s blog</title>
-    <updated>2019-09-10T06:30:22.811Z</updated>
+    <updated>2019-12-18T02:38:27.252Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yym0924.github.io"/>
     <link rel="self" href="https://yym0924.github.io/atom.xml"/>
@@ -137,7 +137,7 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
 <p>通过下面的网址进入OpenSSH for Windows的下载地址</p>
 <pre><code>https://github.com/PowerShell/Win32-OpenSSH/releases
 </code></pre>
-<p><img src="https://yym0924.github.io/post-images/1561705460762.png" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="https://yym0924.github.io/post-images/1561705460762.png" alt=""></figure>
 <p>根据本地电脑操作系统的位数选择对应的包。32位系统下载OpenSSH-Win32.zip，64位系统下载OpenSSH-Win64.zip。<br>
 下载完成后将压缩包解压到一个合适的位置。<br>
 <img src="https://yym0924.github.io/post-images/1561705959220.png" alt=""></p>
