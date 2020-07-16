@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1577431559009">
+<link rel="shortcut icon" href="https://yym0924.github.io/favicon.ico?v=1594891574426">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yym0924.github.io/styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://yym0924.github.io">
-        <img src="https://yym0924.github.io/images/avatar.png?v=1577431559009" class="site-logo">
+        <img src="https://yym0924.github.io/images/avatar.png?v=1594891574426" class="site-logo">
         <h1 class="site-title">yym0924&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -118,24 +118,24 @@
 <h1 id="简介">简介</h1>
 <p>Jupyter是个支持多语言的开源交互式开发环境，便于分步执行和显示结果，也十分利于展示。在数据分析、机器学习和教学等领域有着广泛的应用。而作为生物信息学的研究者，我们主要通过基于网页的Jupyter Notebook使用Python和R进行工作。<br>
 由于其基于网页的特性，可以方便地在本机浏览器中使用子系统和远程服务器上的Python和R环境。</p>
-<p><img src="https://yym0924.github.io/post-images/1561704039434.png" alt=""><br>
-<img src="https://yym0924.github.io/post-images/1561704064628.png" alt=""><br>
+<p><img src="https://yym0924.github.io/post-images/1561704039434.png" alt="" loading="lazy"><br>
+<img src="https://yym0924.github.io/post-images/1561704064628.png" alt="" loading="lazy"><br>
 本文主要介绍Jupyter Notebook的安装和R环境的搭建（Jupyter自带对Python的支持），以及子系统和远程服务器上的Jupyter Notebook上的使用方法。<br>
 接下来的整个部署过程全部基于非Root权限，以便于没有服务器Root权限的朋友使用。</p>
 <h2 id="jupyter本体安装">Jupyter本体安装</h2>
 <p>使用以下命令安装Jupyter本体（虽然使用pip命令也可以安装，但是为了后续数据分析的包管理方便，强烈建议转换到Anaconda上）</p>
 <pre><code>conda install jupyter
 </code></pre>
-<p><img src="https://yym0924.github.io/post-images/1561704479996.png" alt=""><br>
+<p><img src="https://yym0924.github.io/post-images/1561704479996.png" alt="" loading="lazy"><br>
 conda会自动列出一系列需要一起安装的包，输入“y”后回车即可。<br>
-<img src="https://yym0924.github.io/post-images/1561704506178.png" alt=""></p>
+<img src="https://yym0924.github.io/post-images/1561704506178.png" alt="" loading="lazy"></p>
 <h2 id="irkernel的安装与激活">IRkernel的安装与激活</h2>
 <h3 id="所需依赖包的安装">所需依赖包的安装</h3>
 <p>进入R交互模式，使用以下命令安装相关依赖包。</p>
 <pre><code>install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
 </code></pre>
 <p>有时候部分包会安装失败，直接用命令重新安装一遍即可。<br>
-<img src="https://yym0924.github.io/post-images/1561704847680.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561704847680.png" alt="" loading="lazy"><br>
 个人测试的时候遇到两个包报错，重新安装后成功。即使再次失败，单独再次安装也可以更清晰地看到报错信息，以方便排错。</p>
 <h3 id="irkernel本体的安装与激活">IRkernel本体的安装与激活</h3>
 <p>使用以下命令在R交互模式中安装IRkernel。</p>
@@ -144,7 +144,7 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
 <p>安装完成后再用以下命令激活IRkernel</p>
 <pre><code>IRkernel::installspec()
 </code></pre>
-<p><img src="https://yym0924.github.io/post-images/1561705298350.png" alt=""><br>
+<p><img src="https://yym0924.github.io/post-images/1561705298350.png" alt="" loading="lazy"><br>
 有时候会出现类似上图中的警告信息，可以不用在意</p>
 <h1 id="使用">使用</h1>
 <h2 id="windows系统openssh安装">Windows系统OpenSSH安装</h2>
@@ -153,31 +153,31 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
 <p>通过下面的网址进入OpenSSH for Windows的下载地址</p>
 <pre><code>https://github.com/PowerShell/Win32-OpenSSH/releases
 </code></pre>
-<figure data-type="image" tabindex="1"><img src="https://yym0924.github.io/post-images/1561705460762.png" alt=""></figure>
+<figure data-type="image" tabindex="1"><img src="https://yym0924.github.io/post-images/1561705460762.png" alt="" loading="lazy"></figure>
 <p>根据本地电脑操作系统的位数选择对应的包。32位系统下载OpenSSH-Win32.zip，64位系统下载OpenSSH-Win64.zip。<br>
 下载完成后将压缩包解压到一个合适的位置。<br>
-<img src="https://yym0924.github.io/post-images/1561705959220.png" alt=""></p>
+<img src="https://yym0924.github.io/post-images/1561705959220.png" alt="" loading="lazy"></p>
 <p>记下地址，例如上图中的地址就是</p>
 <pre><code>D:\Program Files\OpenSSH-Win64
 </code></pre>
 <p>右击“计算机”，选择属性。在弹出窗口中选择“高级系统设置”<br>
-<img src="https://yym0924.github.io/post-images/1561706365722.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561706365722.png" alt="" loading="lazy"><br>
 在“系统属性”窗口中选择“高级”选项卡，点击“环境变量”按钮。<br>
-<img src="https://yym0924.github.io/post-images/1561706414978.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561706414978.png" alt="" loading="lazy"><br>
 在“环境变量”窗口中选中“用户变量”中的Path，然后点击“编辑”按钮。<br>
-<img src="https://yym0924.github.io/post-images/1561706590105.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561706590105.png" alt="" loading="lazy"><br>
 在“编辑环境变量”窗口中点击“新建”按钮<br>
-<img src="https://yym0924.github.io/post-images/1561706761115.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561706761115.png" alt="" loading="lazy"><br>
 在新的输入框里输入刚才OpenSSH的目录（这里就是“D:\Program Files\OpenSSH-Win64”），然后按确定。之后在“环境变量”窗口、“系统属性”窗口中都记得按下“确定”按钮。在新打开的终端中就可以使用ssh命令了。<br>
-<img src="https://yym0924.github.io/post-images/1561706781617.png" alt=""></p>
+<img src="https://yym0924.github.io/post-images/1561706781617.png" alt="" loading="lazy"></p>
 <h3 id="windows-10系统的openssh启用">Windows 10系统的OpenSSH启用</h3>
 <p>在最新版的Windows 10系统里已经内置了OpenSSH客户端，但是默认是不启用的。所以需要手动开启。<br>
 首先，先确认已经升级到最新版的Windows 10。然后在任务栏搜索框输入“可选功能”，搜索结果中选择“管理可选功能”。<br>
-<img src="https://yym0924.github.io/post-images/1561706808221.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561706808221.png" alt="" loading="lazy"><br>
 查看是否有“OpenSSH客户端”，如果有，恭喜你，直接就可以在终端中使用ssh命令了。如果没有则点击“添加功能”。<br>
-<img src="https://yym0924.github.io/post-images/1561706818181.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561706818181.png" alt="" loading="lazy"><br>
 选中“OpenSSH客户端”选择“安装”<br>
-<img src="https://yym0924.github.io/post-images/1561706829047.png" alt=""></p>
+<img src="https://yym0924.github.io/post-images/1561706829047.png" alt="" loading="lazy"></p>
 <p>一会儿安装完毕后就可以在新打开的终端中使用ssh命令了。</p>
 <h2 id="远程端口映射">远程端口映射</h2>
 <p>Jupyter Notebook支持的是本地使用，但是我们可以通过ssh进行远程端口映射。（**注：**如果只是希望使用本地系统或者是子系统中的Jupyter，跳过这步）<br>
@@ -191,7 +191,7 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
 <pre><code>jupyter notebook
 </code></pre>
 <p>之后会有一系列提示，可能会包括“找不到网页浏览器”，不用在意，服务本身可以启动即可。记下“=”后面的那一串字母数字（令牌）。<br>
-<img src="https://yym0924.github.io/post-images/1561708287934.png" alt=""></p>
+<img src="https://yym0924.github.io/post-images/1561708287934.png" alt="" loading="lazy"></p>
 <h3 id="本地浏览器打开jupyter-notebook">本地浏览器打开Jupyter Notebook</h3>
 <p>由于之前已经把远程端口映射到本地了，所以直接在本地的浏览器地址栏中输入以下地址即可。</p>
 <pre><code>127.0.0.1:1234
@@ -201,26 +201,26 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
 <pre><code>127.0.0.1:8888
 </code></pre>
 <p>如果你是首次连接，会到一个下面这样一个登陆界面，输入刚才记下的令牌就可以登录<br>
-<img src="https://yym0924.github.io/post-images/1561708346019.png" alt=""><br>
-<img src="https://yym0924.github.io/post-images/1561708374435.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561708346019.png" alt="" loading="lazy"><br>
+<img src="https://yym0924.github.io/post-images/1561708374435.png" alt="" loading="lazy"><br>
 进入Jupyter Notebook页面后在点击右上角“New”按钮即可新建基于R或者Python的新Notebook。<br>
-<img src="https://yym0924.github.io/post-images/1561708397097.png" alt=""><br>
-<img src="https://yym0924.github.io/post-images/1561708405355.png" alt=""><br>
+<img src="https://yym0924.github.io/post-images/1561708397097.png" alt="" loading="lazy"><br>
+<img src="https://yym0924.github.io/post-images/1561708405355.png" alt="" loading="lazy"><br>
 这就可以开始使用了。</p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://yym0924.github.io/tag/10W-XnXv7" class="tag">
+                  <a href="https://yym0924.github.io/tag/10W-XnXv7/" class="tag">
                     Python
                   </a>
                 
-                  <a href="https://yym0924.github.io/tag/OPNu-w3pA" class="tag">
+                  <a href="https://yym0924.github.io/tag/OPNu-w3pA/" class="tag">
                     R
                   </a>
                 
-                  <a href="https://yym0924.github.io/tag/h078Q-FmN" class="tag">
+                  <a href="https://yym0924.github.io/tag/h078Q-FmN/" class="tag">
                     Jupyter
                   </a>
                 
@@ -229,7 +229,7 @@ conda会自动列出一系列需要一起安装的包，输入“y”后回车�
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://yym0924.github.io/post/hello-world">
+                <a href="https://yym0924.github.io/post/hello-world/">
                   <h3 class="post-title">
                     Hello World!
                   </h3>
